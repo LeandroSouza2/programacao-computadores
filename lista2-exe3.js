@@ -42,7 +42,7 @@ function entrada(vet){
 }
 
 function calcularMedia(vet){
-    console.log(`Entrou na funçao cancular media`)
+    console.log(`Entrou na funçao calcular media`)
     let soma = 0
     let qtde =0
     for(let i = 0; i<vet.length; i++){
@@ -52,20 +52,43 @@ function calcularMedia(vet){
 
         }
     }
+    console.log(`A media é de ${calculaMedia}`)
 
 }
 
 function calcularMaiorIdade(vet){
     console.log(`Entrou na funçao calcular maior idade`)
     let maiorIdade = vet[0].idade
-    for(let i=1;)
+    for(let i=1; i< vet.length; i++){
+        if(vet[i].idade > maiorIdade){
+            maiorIdade = vet[i].idade
+        }
+    }
+    console.log(` A maior idade é de *${maiorIdade}`)
 
 }
 
-function calcularQtde(vet){
-    console.log(`Entrou na funçao calcular qtde`)
-
+function calculaQtde(vet){
+    let qntfem = 0
+    for(let i = 0; i < vet.length; i++) {
+        if(((vet[i].sexo == 'F' && vet[i].idade >= 20 && vet[i].idade <= 45))
+        || 
+        ((vet[i].sexo == 'F' && vet[i].corolhos == 'V' && vet[i].altura < 1.70))){
+            qntfem++
+        }   
+    }
+    console.log(`A quantidade de mulheres com idade entre 20 e 45 anos OU com olhos verdes e altura menor que 1.70 é ${qntfem}`)
 }
+
+    
+
 function calculaPercentual(vet){
     console.log(`Entrou na funçao calcular percentual`)
+    let conta = 0
+    for(let i8 =1; i<vet.length; i++){
+        if (vet[i].sexo == "M"){
+            conta++
+        }
+    }
+    console.log(`O percentual de homens é ${(conta/vet.length)*100}`)
 }
