@@ -31,5 +31,5 @@ function consultaMediaAlunos(mat){ // mat representa a matriz na funçao chefe()
         medias[i] = medias[i] / 4
     }
     // acabaram os alunos
-    console.log(` Valor das médias ${medias}`)
+    console.log(` Valor das médias ${medias}`) // teste git hub
 }
