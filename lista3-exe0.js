@@ -19,7 +19,7 @@ function calculaMaiorNotaProva(mat, vet){
                 nomeMaiorNota = vet[j].nome // atualiza o nome
             }
         }
-        co8nso8le.log(` A prova ${j+1} tem a maior nota ${maiorNota} do aluno ${nomeMaiorNota}`)
+        console.log(` A prova ${j+1} tem a maior nota ${maiorNota} do aluno ${nomeMaiorNota}`)
     }
 }
 
